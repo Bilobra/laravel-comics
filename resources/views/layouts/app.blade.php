@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('metaTitle')</title>
+    <title>@yield('metaTitle','Home page')</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
     {{-- header --}}
     @include('partials.header')
 
+    {{-- section background hero --}}
+
+
     {{-- main --}}
 
 
     {{-- footer --}}
+    @include('partials.footer')
 </body>
 </html>

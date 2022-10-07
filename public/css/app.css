@@ -45,3 +45,44 @@ header {
   color: #0282F9;
   border-bottom: 1px solid #0282F9;
 }
+
+.main_footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.main_footer .container {
+  background-image: url("../img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.row .col-link {
+  display: flex;
+  flex-basis: 400px;
+  gap: 30px;
+}
+.row .col-link ul {
+  padding: 20px 0;
+}
+.row .col-link ul #white_title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.row .col-link ul .col-list-content {
+  color: #627274;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 5px 0;
+  transition: all 200ms;
+}
+.row .col-link ul .col-list-content:hover {
+  color: white;
+}
