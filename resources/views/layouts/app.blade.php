@@ -13,11 +13,13 @@
 
     {{-- section background hero --}}
 
+    @include('partials.hero')
 
     {{-- main --}}
 
 
     {{-- footer --}}
     @include('partials.footer')
+    @include('partials.subfooter')
 </body>
 </html>
