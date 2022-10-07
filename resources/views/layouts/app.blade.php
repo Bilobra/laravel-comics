@@ -18,6 +18,9 @@
     {{-- main --}}
 
 
+    {{-- shop --}}
+    @include('partials.shop')
+
     {{-- footer --}}
     @include('partials.footer')
     @include('partials.subfooter')

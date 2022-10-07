@@ -120,6 +120,28 @@ header {
   font-weight: 600;
 }
 
+.light_section {
+  background-color: #0282F9;
+  padding: 75px 0;
+  color: white;
+}
+.light_section ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.light_section ul .content-link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  gap: 20px;
+}
+.light_section ul .content-link .img_content img {
+  width: 45px;
+  height: 50px;
+}
+
 .jumbo {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");
