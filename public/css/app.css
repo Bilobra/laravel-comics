@@ -34,6 +34,10 @@ img {
   text-align: center;
   font-size: 3rem;
 }
+.text_welcome .link_comics {
+  text-decoration: underline;
+  font-style: italic;
+}
 
 header {
   padding: 60px 0;
@@ -55,6 +59,7 @@ header {
 .nav-wrapper .nav ul .nav-link.active, .nav-wrapper .nav ul .nav-link:hover {
   color: #0282F9;
   border-bottom: 1px solid #0282F9;
+  cursor: pointer;
 }
 
 .main_footer {
