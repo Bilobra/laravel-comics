@@ -153,6 +153,38 @@ header {
   height: 50px;
 }
 
+.main_content {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 28px;
+  justify-content: space-between;
+}
+.main_content .card {
+  flex-basis: calc(16.6666666667% - 28px);
+  display: flex;
+  flex-direction: column;
+}
+.main_content .card img {
+  height: 184px;
+  opacity: 0.7;
+}
+.main_content .card img:hover {
+  transform: scale(1.1);
+  border: 1px solid white;
+  opacity: 1;
+}
+.main_content .card h3 {
+  margin: 15px 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main_content .card h4 {
+  color: #627274;
+}
+
 .jumbo {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");
