@@ -16,7 +16,9 @@
     @include('partials.hero')
 
     {{-- main --}}
-
+    <main>
+        @yield('content')
+    </main>
 
     {{-- shop --}}
     @include('partials.shop')
