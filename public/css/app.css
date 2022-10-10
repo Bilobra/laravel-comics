@@ -315,6 +315,17 @@ header {
   color: #003F5E;
 }
 
+.banner {
+  position: relative;
+  background-color: #0282F9;
+  height: 70px;
+}
+.banner .img_comic {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+}
+
 .jumbo {
   height: 400px;
   background-image: url("../img/jumbotron.jpg");

@@ -3,6 +3,8 @@
   $links = [
     [
       'text' => 'Characters',
+      'routeName' => 'home',
+
     ],
     [
       'text' => 'Comics',
@@ -10,27 +12,43 @@
     ],
     [
       'text' => 'Movies',
+      'routeName' => 'movies',
+
     ],
     [
       'text' => 'Tv',
+      'routeName' => 'tv',
+
     ],
     [
       'text' => 'Games',
+      'routeName' => 'games',
+
     ],
     [
       'text' => 'Collectibles',
+      'routeName' => 'collectibles',
+
     ],
     [
       'text' => 'Videos',
+      'routeName' => 'videos',
+
     ],
     [
       'text' => 'Fans',
+      'routeName' => 'fans',
+
     ],
     [
       'text' => 'News',
+      'routeName' => 'news',
+
     ],
     [
       'text' => 'Shop',
+      'routeName' => 'shop',
+
     ],
   ];
 @endphp
@@ -49,7 +67,7 @@
                     @foreach($links as $link)
                     
                     <li class="nav-link">
-                        <a class="{{ $loop->first ? 'active' : '' }}" href="{{isset($link['routeName'])? route($link['routeName']) : '/' }}">
+                        <a class="{{ Route::currentRouteName() === $link['routeName'] ? 'active' : '' }}" href="{{isset($link['routeName'])? route($link['routeName']) : '/' }}">
                             {{ $link['text'] }}
                         </a>
                     </li>

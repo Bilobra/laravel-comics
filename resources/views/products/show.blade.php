@@ -6,12 +6,16 @@
 
     {{-- @dump($comic) --}}
     <div class="">
+        <div class="banner">
+            <div class="img_comic">
+                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+
+            </div>
+        </div>
         <div class="container">
            
-
                 <div class="card_product">
             
-                    {{-- <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}"> --}}
                     <div class="row">
                         <div class="col col_description">
                             <h3 class="title">{{ $comic['title'] }}</h3>
