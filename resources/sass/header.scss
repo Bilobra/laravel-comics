@@ -20,8 +20,8 @@ header {
 
 
 
-                &.active,
-                &:hover {
+                a.active,
+                a:hover {
                     color: #0282F9;
                     border-bottom: 1px solid #0282F9;
                     cursor: pointer;

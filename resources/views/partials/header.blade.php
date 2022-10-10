@@ -6,6 +6,7 @@
     ],
     [
       'text' => 'Comics',
+      'routeName' => 'prodotti',
     ],
     [
       'text' => 'Movies',
@@ -46,9 +47,9 @@
                
                 <ul>
                     @foreach($links as $link)
-                    <!-- il primo giorno facciamo vedere come popolare il menu dinamicamente usando un array in data() -->
+                    
                     <li class="nav-link">
-                        <a class="{{ $loop->first ? 'active' : '' }}">
+                        <a class="{{ $loop->first ? 'active' : '' }}" href="{{isset($link['routeName'])? route($link['routeName']) : '/' }}">
                             {{ $link['text'] }}
                         </a>
                     </li>
@@ -60,3 +61,7 @@
         </div>
     </div>
 </header>
+
+{{-- Request::route()->getName() === $link['routeName'] ? 'active' : '' --}}
+{{-- Route::currentRouteName() === $link['routeName'] --}}
+{{-- Route::currentRouteName() --}}
