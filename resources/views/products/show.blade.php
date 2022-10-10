@@ -53,23 +53,49 @@
                         <h4 class="title">Talent</h4>
                         <div class="artists">
                             <p>Art By:</p>
-                            <p>
-                                {{$comic['type']}}
-                                {{-- @forelse ($comics as $comic)
-                                    <p>
-                                        {{$comic['title']}}
-                                    </p>
+                            <div class="artists_wrapper">
+                                @forelse ($comic['artists'] as $artist)
+                               
+                                    
+                                <a href="#">{{$artist}},</a> 
+                                    
+                                
                                 @empty
                                     <p>non ci sono artisti</p>
-                                @endforelse --}}
-                            </p>
+                                @endforelse
+                            </div>
                         </div>
                         <div class="authors">
                             <p>Written by:</p>
-                            <p></p>
+                            <div class="authors_wrapper">
+                                @forelse ($comic['writers'] as $writer)
+                                
+                                   <a href="#">{{$writer}},</a> 
+                                
+                                @empty
+                                    <p>non ci sono autori</p>
+                                @endforelse
+                            </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <h4 class="title">Specs</h4>
+                        <div class="series">
+                            <p>Series:</p>
+                            <div><a href="#" class="series_comic">{{$comic['series']}}</a></div>
+                        </div>
+                        <div class="price">
+                            <p>U.S. Price: </p>
+                            <div>{{$comic['price']}}</div>
+                        </div>
+                        <div class="date">
+                            <p>On Sale Date:</p>
+                            <div>{{$comic['sale_date']}}</div>
+                        </div>
+    
+                    </div>
                 </div>
+                
             </div>
         </div>
 
