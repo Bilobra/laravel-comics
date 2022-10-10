@@ -12,42 +12,42 @@
     ],
     [
       'text' => 'Movies',
-      'routeName' => 'movies',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Tv',
-      'routeName' => 'tv',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Games',
-      'routeName' => 'games',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Collectibles',
-      'routeName' => 'collectibles',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Videos',
-      'routeName' => 'videos',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Fans',
-      'routeName' => 'fans',
+      'routeName' => null,
 
     ],
     [
       'text' => 'News',
-      'routeName' => 'news',
+      'routeName' => null,
 
     ],
     [
       'text' => 'Shop',
-      'routeName' => 'shop',
+      'routeName' => null,
 
     ],
   ];

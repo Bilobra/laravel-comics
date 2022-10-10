@@ -41,15 +41,14 @@ Route::get('/comics/{id}', function ($id) {
 
 
 
-// Route::get('/comics/{id}/ciao', function ($id) {
-//     return $id;
-// });
 
-Route::view('/movies', 'movies')->name('movies');
-Route::view('/tv', 'tv')->name('tv');
-Route::view('/games', 'games')->name('games');
-Route::view('/collectibles', 'colectibles')->name('collectibles');
-Route::view('/videos', 'videos')->name('videos');
-Route::view('/fans', 'fans')->name('fans');
-Route::view('/news', 'news')->name('news');
-Route::view('/shop', 'shop')->name('shop');
+// Route::view('/movies', 'movies')->name('movies');
+// Route::view('/tv', 'tv')->name('tv');
+// Route::view('/games', 'games')->name('games');
+// Route::view('/collectibles', 'colectibles')->name('collectibles');
+// Route::view('/videos', 'videos')->name('videos');
+// Route::view('/fans', 'fans')->name('fans');
+// Route::view('/news', 'news')->name('news');
+// Route::view('/shop', 'shop')->name('shop');
+
+// creare le viste per ognuna e aggiungere il layout altrimenti la pagina è vuota e non si vede active

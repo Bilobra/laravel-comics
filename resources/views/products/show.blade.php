@@ -4,7 +4,7 @@
 @section('metaTitle',$comic['title'])
 @section('content')
 
-    {{-- @dump($comic) --}}
+   
     <div class="">
         <div class="banner">
             <div class="img_comic">
